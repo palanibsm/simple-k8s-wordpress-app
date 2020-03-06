@@ -2,7 +2,7 @@
 
 ## Deployment Instruction
 
-### Pre-requsites
+### Prerequisites
 1. Assuming you have nfs configured, or you can use GCP persistent disk or AWS EBS volume for persistent storage
 1. You already logged in to your terminal with kubectl access
 
