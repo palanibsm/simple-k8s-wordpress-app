@@ -13,3 +13,15 @@
 1. Step-2: Claim persistent volume
    1. Run: kubectl apply -f mysql-claim.yml
    1. Run: kubectl apply -f wp-claim.yml
+1. Step-3: Create mysql root password
+   1. First create password in base64 (Better than cleartext). Run echo -n 'hJuu&53Gk0' | base64 (You will get aEp1dSY1M0drMA==). Copy this value in  secret.yml
+   1. Run: kubectl apply -f secret.yml
+1. Step-4: Create Deployments
+   1. Run: kubectl apply -f mysql-deployment.yml
+   1. Run: kubectl apply -f wp-deployment.yml
+1. Step-5: Configure Service(s)
+   1. Run: kubectl apply -f mysql-svc.yml
+   1. Run: kubectl apply -f wp-svc.yml
+
+
+### Thank you...
